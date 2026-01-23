@@ -91,5 +91,8 @@ To build this solution, I implemented a 4-stage technical pipeline:
 
 ---
 <img width="1302" height="727" alt="powercredit" src="https://github.com/user-attachments/assets/3846f18a-4b58-4732-9f14-ef804a5a01e3" />
+<img width="918" height="299" alt="1cs" src="https://github.com/user-attachments/assets/1d3e1c88-d630-4dec-b8c0-a40c9a29ee60" />
+<img width="930" height="281" alt="2cs" src="https://github.com/user-attachments/assets/08bcbaa3-d78c-4ad8-8158-8f1fea55ad95" />
+
 <img width="943" height="639" alt="pycredit" src="https://github.com/user-attachments/assets/1d6e07f2-fdd9-4adb-b8bd-e6ddf2d424cc" />
 
