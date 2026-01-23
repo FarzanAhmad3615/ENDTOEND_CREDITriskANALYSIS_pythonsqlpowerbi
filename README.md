@@ -1,5 +1,25 @@
 # **End-to-End Credit Risk Intelligence & Predictive Analytics Pipeline**
+Leveraging XGBoost & SHAP for Interpretable Financial Forecasting
 
+📌 Executive Summary Financial institutions lose billions annually to loan defaults. This project implements a robust machine learning pipeline to predict default probability at the point of application. By combining XGBoost's predictive power with SHAP's interpretability, this system provides both high accuracy and the "Reason Codes" required for regulatory compliance in banking.
+
+🧠 The Problem Statement The objective is to minimize Credit Risk by identifying high-risk applicants while reducing False Negatives (missed defaults), which are the most costly errors for a lender.
+
+⚙️ Engineering Pipeline The project follows a modular Machine Learning Lifecycle (MLLC):
+
+Data Synthesis & Strategy Since real-world financial data is often proprietary, I engineered a synthetic dataset of 40,000 records reflecting realistic banking distributions: Target: default (1 = Default, 0 = Non-Default). Logic: Ground truth is influenced by non-linear interactions between Debt-to-Income (DTI) and Credit Scores.
+
+Feature Engineering Beyond raw data, I engineered features to capture "Ability to Pay": Loan-to-Income (LTI) Ratio: A critical metric for assessing debt burden. Numerical Stability: Applied outlier clipping to Income features to ensure gradient descent stability in XGBoost.
+
+Modeling & Interpretability Algorithm: XGBoost (Extreme Gradient Boosting) was chosen for its ability to handle tabular data and capture non-linear relationships. Explainability (XAI): Integrated SHAP (SHapley Additive exPlanations) to break down individual predictions—turning a "black box" model into a "glass box" model.
+
+📊 Performance & Insights _Key Risk Drivers (SHAP Analysis)
+
+Debt-to-Income (DTI): The most significant predictor; values > 0.4 show exponential risk increase.
+
+Credit Score: Strong inverse correlation with default probability.
+
+LTI Ratio: Engineered feature proved to be a top 3 predictor
 **Prepared by:** Farzan Ahmad
 
 **Objective:** To demonstrate a full-cycle data analytics solution that predicts loan defaults and quantifies financial risk using Machine Learning, SQL, and Power BI.
